@@ -1,0 +1,28 @@
+#g1{
+	position: absolute;
+	top:0%;
+	left:0%;
+	text-align: center;
+}
+#g2{
+	position: absolute;
+	top:0%;
+	left:32%;
+	text-align: center;
+}
+#g3{
+	position: absolute;
+	top:0%;
+	right: 0%;
+	text-align: center;
+}
+body{
+	overflow: hidden;
+}
+#newh{
+	position: absolute;
+	left: 40%;
+	top: 70%;
+	font-size: 50px;
+	font-family: Raleway;
+}

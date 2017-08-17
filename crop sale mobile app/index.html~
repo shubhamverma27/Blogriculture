@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tieto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/splash.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+          <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="css/css.css"> 
+
+    <link rel="stylesheet" href="css/normalize.css">
+<script type="text/javascript" src="js/p.js"></script>
+  <script src="js/script.js"></script>
+<script src="js/ret.js"></script>
+<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/crypto-js/2.5.3-crypto-md5.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ricostacruz.com/jquery.transit/jquery.transit.min.js'></script>
+      <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+    <script src="js/bal.js"></script>
+    
+    
+    
+
+</head>
+<body>
+           <!-- splash aur login hoga yahaan -->
+              <div id="splash">       
+                  
+                 <div id="sun-small"><img src="./img/sun-small.svg" height="100%" width="auto"></img>           </div>
+              <div id="mount"><img src="./img/wrld1.svg" height="100%" width="auto"></img></div>
+                     <div id="boat"><img src="./img/wooden-ship.svg" height="100%" width="auto"></img></div>
+                     <div id="water"><img src="./img/water.svg" height="100%" width="auto"></img></div>
+                     <div id="clouds" ><img src="./img/clouds.svg" height="100%" width="auto"></img></div>
+              
+              
+              
+              </div>
+              <div id="start">
+                  
+                  <h2 id="lgtitle1" style="align:justify;">Login</h2>
+                  
+                  
+                  <div id="bcirc1" onclick="abc()">
+                  <div id="circle1">
+                  <img src="img/farmer.png" height="100%" width="auto">
+                      <h2 style="color:white;">Farmer</h2>
+                  </div>
+                  </div>
+                  <div id="bcirc2" onclick="abc()">
+                  <div id="circle2">
+                  <img src="img/statistics.png" height="100%" width="auto">
+                      <h2 style="color:white;">Invester</h2>
+                  </div>
+                  </div>
+              </div>
+              <!-- yeh login karega -->
+              <div id="login">
+              
+                  <h2 id="lgtitle">Login Page</h2>
+                   <form id = "form123" name = "form123" action="http://192.168.43.58/currentuser.php" method = "post"  class="col s12" target="some_name">
+                  <div id="loginb">
+             <div class="row">
+                  <div class="input-field col s10">
+                    <input name="name12" id="name12" type="text" class="validate">
+                    <label for="name12" style="color:black;">User Name</label>
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="input-field col s10">
+                    <input name="password12" id="password" type="password" class="validate">
+                    <label for="password" style="color:black;">Password</label>
+                  </div>
+                </div>
+              
+               <button class="btn waves-effect waves-light " type="submit" name="action" onclick="hello()">Submit
+    <i class="material-icons right">send</i>
+  </button>
+              </div></form>
+              
+              
+          </div>    
+    <div id="background">
+        
+        <div id="navbar">
+            <i class="fa fa-bars fa-3x"  onclick="out()"></i>
+            <i class="fa fa-home fa-3x" onclick="home()"></i>
+            
+        </div>
+         <div id="cuser" >Current User : <span id="cuser2">null</span></div>
+        <div id="bal" onclick="sql2()">Balance : Rs. <span id="bal2">null</span></div>
+        <div id="home">
+        <img src="img/ad.jpg">
+        </div>
+        
+        <!-- Yahaan profile imfo hai -->
+        <div id="profile">
+        </div>
+        
+        
+        <!-- yahaan smart contract hai -->
+        
+        <div id="contract">
+        
+            <div class="row">
+        <div class="col s12 m13">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Smart Contract</span>
+              <p>Name : <span id="sname">0.00</span></p>
+                <p>Address : <span id="saddr">0.00</span></p>
+                <p>Crop Type : <span id="scroptype">0.00</span></p>
+                <p>Year : <span id="syear">0.00</span></p>
+                <p>Area : <span id="sarea">0.00</span></p>
+                <p>Hash ID : <span id="sid">0.00</span></p>
+                <p>Coverage : <span>0.00</span></p>
+                <p>Initial Payment : <span>0.00</span></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Next</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        </div>
+        
+        
+        
+        
+        <!-- yahaan se buyer ka window aayega -->
+        
+        <div id="insurer" style="overflow-y:scroll display: none">
+        <div id="c1" class="row">
+        <div class="col s12 m13">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Contract 1</span>
+              <p>Name : <span id="n1">0.00</span></p>
+                <p>Address : <span id="a1">0.00</span></p>
+                <p>Crop Type : <span id="cr1">0.00</span></p>
+                <p>Area : <span id="ar1">0.00</span></p>
+                <p>Hash ID : <span id="id1">0.00</span></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Next</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+            <div id="c2" class="row">
+        <div class="col s12 m13">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Contract 2</span>
+              <p>Name : <span id="n2">0.00</span></p>
+                <p>Address : <span id="a2">0.00</span></p>
+                <p>Crop Type : <span id="cr2">0.00</span></p>
+                <p>Area : <span id="ar2">0.00</span></p>
+                <p>Hash ID : <span id="id2">0.00</span></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Next</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+            <div id="c3" class="row">
+        <div class="col s12 m13">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Contract 3</span>
+              <p>Name : <span id="n3">0.00</span></p>
+                <p>Address : <span id="a3">0.00</span></p>
+                <p>Crop Type : <span id="cr3">0.00</span></p>
+                <p>Area : <span id="ar3">0.00</span></p>
+                <p>Hash ID : <span id="id3">0.00</span></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Next</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+            <div id="c4" class="row">
+        <div class="col s12 m13">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Contract 4</span>
+              <p>Name : <span id="n4">0.00</span></p>
+                <p>Address : <span id="a4">0.00</span></p>
+                <p>Crop Type : <span id="cr4">0.00</span></p>
+                <p>Area : <span id="ar4">0.00</span></p>
+                <p>Hash ID : <span id="id4">0.00</span></p>
+            </div>
+            <div class="card-action">
+              <a href="#">Next</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+                        
+
+                        
+
+        
+    </div>     
+        
+        
+            <!-- yahaan insurer contract khareedega -->
+    <div id="policy">
+        <div class="row">
+        <div class="col s12 m13">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Smart Contract1</span>
+              <p>Name : <span id="sname1">somesh</span></p>
+                <p>Address : <span id="saddr1">asdf</span></p>
+                <p>Crop Type : <span id="scroptype1">3</span></p>
+                <p>Year : <span id="syear1">02016</span></p>
+                <p>Area : <span id="sarea1">2111</span></p>
+                <p>Hash ID : <span id="sid1">dfd8aafbb4bd10d9b44525b745d363b8</span></p>
+                 <div class="input-field col s12">
+          <input id="c_policy" type="text" class="validate" onchange="handleChange(this)">
+          <label for="coverage" >My share</label>
+        </div>
+                <p class="col s6">Coverage : <span id="cover1"></span></p>
+                <p>Initial Payment: <span id="premium1"></span ></p>
+            </div>
+            <div class="card-action">
+              <button class="btn waves-effect waves-light " type="submit"  onclick="balred2()">Submit
+    <i class="material-icons right">send</i>
+  </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</div>
+       
+        <!--  Registration form yahaan se shuru hai--> 
+        <div id="reg" style="overflow-y:scroll">
+        
+            
+          <div class="row">
+    <form id = "form" name = "form" action="http://192.168.43.58/db.php" method = "post"  class="col s12" target="some_name">
+ <div class="row">
+        <div class="input-field col s6">
+          <input name="fname" id="first_name" type="text" class="validate" onchange="updatehash()">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input name="lname" id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+        
+            
+        
+        
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="email" id="email" type="email" class="validate">
+           <label for="email" data-error="wrong" data-success="right">Email</label>
+        </div>
+      </div>
+        
+         <div class="row">
+        <div class="input-field col s12"> <input  name="fid" id="fid"  disabled value="Unique Hash ID" type="text"><label for="disable"></label> </div>
+      </div>
+        
+        <div class="row">
+        <div class="input-field col s12">
+          <input name="faddr" id="add" type="text" class="validate" onchange="updatehash()">
+           <label for="add" data-error="wrong" data-success="right" >Farm Address</label>
+        </div>
+      </div>
+        
+        <div class="input-field col s12">
+    <select name="croptype">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Soy Beans</option>
+      <option value="2">Oranges</option>
+      <option value="3">Grapes</option>
+    </select>
+    <label>Crop Type</label>
+  </div>
+        
+           <div class="input-field col s12">
+    <select name="cropyear">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">2017</option>
+      <option value="2">2018</option>
+      <option value="3">2019</option>
+    </select>
+    <label>Crop Year</label>
+  </div>
+        
+        <div class="input-field col s12">
+          <input name="area" id="Area" type="text" class="validatesas">
+          <label for="Area">Area</label>
+        </div>
+        
+        <div class="input-field col s12">
+          <input name="coverage" id="coverage" type="text" class="validate" onchange="handleChange(this)" >
+          <label for="coverage">Coverage</label>
+        </div>
+
+         
+       
+        <div class="input-field col s6">
+          <input disabled value="Coverage" id="dis1" type="text" class="validate">
+          <label for="disabled">Coverage</label>
+        </div>
+        
+        <div class="input-field col s6">
+          <input name="premium" disabled value="Premium" id="dis2" type="text" class="validate" >
+          <label for="disabled">Premium</label>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <input name="rembal" disabled value="Remaining Balance" id="rembal" type="text" class="validate" >
+           <label for="rembal"></label>
+        </div>
+      </div>
+        
+             <button class="btn waves-effect waves-light " type="submit" name="action" onclick="sql2()" >Submit
+    <i class="material-icons right">send</i>
+  </button>
+            <button class="btn waves-effect waves-light " type="submit" name="action">Cancel
+    <i class="material-icons right">send</i>
+  </button>
+     
+    </form>
+      
+  <iframe id="some_name" name="some_name" style="display:none ; position:absolute; z-index:-100"></iframe>    
+  </div>
+    </form></div>
+            
+        </div>
+    </div>
+            
+          
+            
+
+            <!--paytm karo-->
+        
+        <div id="recharge">
+        
+            <div id="paytm"><img src="img/paytm.png" height="30%" width="30%"></div>
+            <div id="karo">
+   <form id = "form12" name = "form12" action="http://192.168.43.58/recharge.php" method = "post"  class="col s12" target="some_name">
+ <div class="row">
+        <div class="input-field col s6">
+          <input name="fname1" id="first_name1" type="text" class="validate">
+          <label for="first_name1">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input name="lname1" id="last_name1" type="text" class="validate">
+          <label for="last_name1">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="amount1" id="amount1" type="text" class="validate" >
+          <label for="amount1">amount</label>
+        </div>
+        <div class="input-field col s6">
+          <input name="phone1" id="phone1" type="text" class="validate" >
+          <label for="phone1">Phone No</label>
+        </div>
+        </div>
+    <button class="btn waves-effect waves-light " type="submit" name="action1" onclick="sa()" >Submit
+    <i class="material-icons right">send</i>
+  </button>
+            <button class="btn waves-effect waves-light " type="submit" name="action12">Cancel
+    <i class="material-icons right">send</i>
+  </button>
+     
+    </form></div>
+       
+
+        </div>
+  
+   
+            <!-- Yeh neeche wala Slidebar hai -->
+            <div id="slider" class=" slider">
+        
+            <i class="fa fa-bell fa-4x" onclick="insurer()"></i>
+            <i class="fa fa-check-circle fa-4x" onclick="contract()" ></i>
+            <i class="fa fa-pie-chart fa-4x" onclick="policy()"></i>
+            <i class="fa fa-user-circle fa-4x" onclick="recharge()" ></i>
+            <i class="fa fa-usd fa-4x" onclick="chart()"></i>
+            <i class="fa fa-shopping-bag fa-4x" onclick="reg()"></i>
+            
+            
+        </div>
+        <!--chart--><div id="chat" style="position:absolute;top:15%;left:3%">
+        <div id="g1" style="display:none"> <div id="myDiv" style="position: absolute; top:30% ; width: 100vw; height: 70vh;"></div></div>
+              </div>
+
+    <script>
+    
+    $(document).ready(function() {
+    $('select').material_select();
+  });
+     
+    </script>
+    <script>
+  function handleChange(input) {
+    if (input.value < 0) input.value = 0;
+    if (input.value > 100) input.value = 100;
+    onRangeChange();
+   onRangeChange2();
+  }
+</script>
+    
+    
+
+</body>
+</html>

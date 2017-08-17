@@ -1,0 +1,49 @@
+var a=0;
+function out() {
+	if(a==0)
+	{
+		document.getElementById('slider').style.display = "block";
+	  document.getElementById('slider').className = "slider animated slideInUp";
+		a++;
+	}
+	else {
+		document.getElementById('slider').className = "slider animated slideOutDown";
+		setTimeout(function(){
+			document.getElementById('slider').style.display = "none";
+		},300);
+		a--;
+	}
+}
+
+var b=0;
+function reg() {
+	if(b==0)
+	{
+		document.getElementById('reg').style.display = "block";
+	  document.getElementById('reg').className = "reg animated slideInLeft";
+		b++;
+	}
+	else {
+		document.getElementById('reg').className = "reg animated slideOutRight";
+		setTimeout(function(){
+			document.getElementById('reg').style.display = "none";
+		},300);
+		b--;
+	}
+}
+var c=0;
+function contract() {
+	if(c==0)
+	{
+		document.getElementById('contract').style.display = "block";
+	  document.getElementById('contract').className = "contract animated slideInLeft";
+		c++;
+	}
+	else {
+		document.getElementById('contract').className = "contract animated slideOutRight";
+		setTimeout(function(){
+			document.getElementById('contract').style.display = "none";
+		},300);
+		c--;
+	}
+}

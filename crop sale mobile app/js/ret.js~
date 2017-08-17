@@ -1,0 +1,33 @@
+
+           var x1=0;
+        var y1=0;
+            var z1=0;
+            
+           document.addEventListener("DOMContentLoaded",function(){
+  		var dataString11 = "";
+                var dataString12 = "";
+                var dataString13 = "";
+  $.ajax({
+      
+        type: "GET",
+        url: "http://localhost/ret.php",
+        data: dataString11,
+                cache: false,
+        success: function(data) {
+			
+			    	x1=JSON.parse(data);
+				y1=JSON.parse(x1);
+				d
+                    
+				
+        },
+        
+        error: function(data)
+        {
+        }   
+    });
+            
+          
+        
+
+});    

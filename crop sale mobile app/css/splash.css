@@ -1,0 +1,119 @@
+#splash{
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	height: 100%;
+	width: 100%;
+	background-color: #72CAE8;
+    overflow: hidden;
+    
+        -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);  
+}
+
+#mount{
+	position: absolute;
+	bottom: .4vh;
+	left: -52vw;
+	height: 80%;
+	width: 160%;
+	-webkit-translate:transform(-50%,-50%);
+    translate:transform(-50%,-50%);
+    overflow: hidden;
+}
+#boat{
+    position: absolute;
+	bottom: 4vh;
+	left: 3vw;
+	height: 18%;
+	width: 18%;
+    animation-name: example;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 14s;
+    -webkit-animation-iteration-count: infinite;
+
+}
+#water{
+    position: absolute;
+	bottom: -3vh;
+	left: 0vw;
+	height: 8%;
+	width: 100%;
+    animation-name: example1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: example1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+#clouds{
+     position: absolute;
+	top: 2vh;
+	left: 50vw;
+	height: 15%;
+	width: 25%;
+    animation-name: example2;
+    animation-duration: 55s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: example2;
+    -webkit-animation-duration: 55s;
+    -webkit-animation-iteration-count: infinite;
+}
+#sun-small{
+    position: absolute;
+    top:25vh;
+    left: 20vw;
+    height: 15%;
+    width: 5%;
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+    
+}
+@-webkit-keyframes example{
+    0% {left: 3vw; }
+    50% {left: 70vw; }
+    100% {left: 3vw; }
+}
+@keyframes example{
+    0% {left: 3vw; }
+    50% {left: 70vw; }
+    100% {left: 3vw; }
+}
+@-webkit-keyframes example1{
+    0% {bottom: -3vh; }
+    50% {bottom: -2.3vh; }
+    100% {bottom: -3vh; }
+}
+@keyframes example1{
+     0% {bottom: -3vh; }
+    50% {bottom: -2.3vh; }
+    100% {bottom: -3vh; }
+}
+@-webkit-keyframes example2{
+    0% {left: -40vw; }
+    50% {left: -105vw; }
+    100% {left: -40vw; }
+}
+@keyframes example2{
+     0% {left: -40vw; }
+    50% {left: 105vw; }
+    100% {left: -40vw; }
+}
+.cir1{
+    position: absolute;
+    height: 20vh;
+    width: 20vh;
+    background-color: #72CAE8;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translate(-50%,-50%);
+
+    
+}

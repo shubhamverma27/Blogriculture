@@ -1,0 +1,238 @@
+#start{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: block;    
+}
+#lgtitle1{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#circle1{
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    background-color: black;
+    border-radius: 50%;
+}
+#bcirc1{
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    top: 50%;
+    left: 25%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+#circle2{
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    background-color: black;
+    border-radius: 50%;
+}
+#bcirc2{
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    top: 50%;
+    left: 75%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#login{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: none;
+    color: black;
+}
+#lgtitle{
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    color: white;
+}
+#loginb{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 20%;
+    left: 9%;
+    overflow: hidden;
+    transform: translate(-50,-50);
+    color: black;
+}
+
+
+#background{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#navbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 20%;
+    width: 100%;
+    background-color: #59688e;
+}
+.fa{
+    color: white;
+}
+.fa-bars{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+.fa-home{
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+}
+#slider{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    top:60%;
+    left: 0%;
+    background-color: #59688e;
+    display: none;
+}
+.fa-bell{
+    position: absolute;
+    top:10%;
+    left:75%
+}
+.fa-check-circle{
+    position: absolute;
+    top:10%;
+    left:40%
+    
+}
+.fa-pie-chart{
+    position: absolute;
+    top:50%;
+    left:40%
+    
+}
+.fa-user-circle{
+    position: absolute;
+    top:10%;
+    left:5%
+    
+}
+.fa-usd{
+    position: absolute;
+    top:50%;
+    left:7%
+    
+}
+.fa-shopping-bag{
+    position: absolute;
+    top:50%;
+    left:75%
+    
+}
+#home{
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    top: 20%;
+    left:0%;
+    display: none;
+    
+}
+#profile{
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    top: 20%;
+    left:0%;
+    display: none;
+}
+#reg{
+    position: absolute;
+    height: 79.5vh;
+    width: 98vw;
+    top: 20.5%;
+    left:1%;
+    display: none;
+}
+#contract{
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    top: 20%;
+    left:0%;
+    display: none;
+}
+#insurer{
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    top: 20%;
+    left:0%;
+overflow-y:scroll;
+    display: none;
+
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+#c1,#c2,#c3,#c4{
+display :none;
+}
+
+#policy{
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    top: 20%;
+    left:0%;
+    display: none;
+}
+#bal{
+    color: white;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+#recharge{
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    top: 20%;
+    left:0%;
+    display: none;
+    background-color: white;
+}
+#paytm{
+   position: absolute;
+    top:5%;
+    left: 36%;
+    
+
+}
+#karo{
+   position: absolute;
+    top:20%;
+    left: 2%;
+    
+}
