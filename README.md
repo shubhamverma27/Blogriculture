@@ -6,15 +6,15 @@ Webapp and Mobile app For Crop Sale using Blockchain (Ethereum)
 To initialize a project with this run the following commands :-
 (First Install Truffle and NPM)
 
-1. npm install -g webpack 
+1. **npm install -g webpack**
 
 2. Extract folder in nodemodules.zip to same directory / 
 
-3. run testrpc on a new tab	To run server on localhost:8545
+3. run **testrpc** on a new tab	To run server on localhost:8545
 
-4. truffle migrate         	To migrate the code to server running on 8545 port
+4. **truffle migrate**         	To migrate the code to server running on 8545 port
 
-5. npm run dev     			To Run our server at localhost:8080
+5. **npm run dev**     			To Run our server at localhost:8080
 
 ## Using the Front End
 
